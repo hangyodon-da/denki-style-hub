@@ -1,8 +1,11 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 import { Zap, Lightbulb, Power, Home } from "lucide-react";
 
 const PricingSection = () => {
+  const navigate = useNavigate();
   const pricingData = [
     {
       icon: <Lightbulb className="w-6 h-6" />,
@@ -63,7 +66,8 @@ const PricingSection = () => {
           {pricingData.map((category, index) => (
             <Card 
               key={index} 
-              className="shadow-card hover:shadow-electric transition-all duration-300 hover:-translate-y-2 bg-gradient-card border-border/50"
+              className="shadow-card hover:shadow-electric transition-all duration-300 hover:-translate-y-2 bg-gradient-card border-border/50 cursor-pointer"
+              onClick={() => navigate("/contact")}
             >
               <CardHeader className="text-center pb-4">
                 <div className="flex items-center justify-center w-16 h-16 bg-gradient-electric rounded-full mx-auto mb-4 shadow-glow">
@@ -91,9 +95,20 @@ const PricingSection = () => {
           <p className="text-muted-foreground mb-4">
             ※出張費・材料費込みの目安価格です。詳細はお見積もりにてご確認ください。
           </p>
-          <Badge variant="outline" className="border-accent text-accent">
-            見積もり無料・相談無料
-          </Badge>
+          <div className="space-y-4">
+            <Badge variant="outline" className="border-accent text-accent">
+              見積もり無料・相談無料
+            </Badge>
+            <div>
+              <Button
+                onClick={() => navigate("/contact")}
+                className="bg-gradient-electric text-white shadow-glow hover:shadow-electric transition-all duration-300"
+                size="lg"
+              >
+                お問い合わせはこちら
+              </Button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
