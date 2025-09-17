@@ -30,9 +30,9 @@ const Header = () => {
               お電話
             </Button>
             <Button 
-              variant="secondary" 
+              variant="default" 
               size="sm" 
-              className="bg-accent hover:bg-accent-light text-accent-foreground"
+              className="bg-accent hover:bg-accent-light text-accent-foreground shadow-glow"
               onClick={() => navigate('/contact')}
             >
               <Mail className="w-4 h-4 mr-2" />

@@ -102,7 +102,7 @@ const PricingSection = () => {
             <div>
               <Button
                 onClick={() => navigate("/contact")}
-                className="bg-gradient-electric text-white shadow-glow hover:shadow-electric transition-all duration-300"
+                className="bg-accent hover:bg-accent-light text-accent-foreground shadow-glow hover:shadow-electric transition-all duration-300"
                 size="lg"
               >
                 お問い合わせはこちら
