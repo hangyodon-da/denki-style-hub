@@ -1,7 +1,10 @@
 import { Zap, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
+  
   return (
     <header className="bg-gradient-hero shadow-electric sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4">
@@ -11,7 +14,7 @@ const Header = () => {
               <Zap className="w-6 h-6 text-accent animate-pulse-glow" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-white">エレクトリック静岡</h1>
+              <h1 className="text-2xl font-bold text-white">有限会社中央電工</h1>
               <p className="text-primary-foreground/80 text-sm">確かな技術で安心をお届け</p>
             </div>
           </div>
@@ -21,6 +24,7 @@ const Header = () => {
               variant="secondary" 
               size="sm" 
               className="bg-background/20 hover:bg-background/30 text-white border-white/30"
+              onClick={() => window.open('tel:0548-87-2378', '_self')}
             >
               <Phone className="w-4 h-4 mr-2" />
               お電話
@@ -29,6 +33,7 @@ const Header = () => {
               variant="secondary" 
               size="sm" 
               className="bg-accent hover:bg-accent-light text-accent-foreground"
+              onClick={() => navigate('/contact')}
             >
               <Mail className="w-4 h-4 mr-2" />
               お問い合わせ
