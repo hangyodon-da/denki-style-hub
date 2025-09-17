@@ -6,24 +6,24 @@ const Header = () => {
   const navigate = useNavigate();
   
   return (
-    <header className="bg-gradient-hero shadow-electric sticky top-0 z-50">
+    <header className="bg-background shadow-card sticky top-0 z-50 border-b border-border">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <div className="flex items-center justify-center w-12 h-12 bg-background/20 rounded-full shadow-glow">
-              <Zap className="w-6 h-6 text-accent animate-pulse-glow" />
+            <div className="flex items-center justify-center w-12 h-12 bg-accent rounded-full shadow-glow">
+              <Zap className="w-6 h-6 text-accent-foreground animate-pulse-glow" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-white">有限会社中央電工</h1>
-              <p className="text-primary-foreground/80 text-sm">確かな技術で安心をお届け</p>
+              <h1 className="text-2xl font-bold text-foreground">有限会社中央電工</h1>
+              <p className="text-muted-foreground text-sm">確かな技術で安心をお届け</p>
             </div>
           </div>
           
           <div className="hidden md:flex items-center space-x-4">
             <Button 
-              variant="secondary" 
+              variant="outline" 
               size="sm" 
-              className="bg-background/20 hover:bg-background/30 text-white border-white/30"
+              className="border-primary hover:bg-primary hover:text-primary-foreground"
               onClick={() => window.open('tel:0548-87-2378', '_self')}
             >
               <Phone className="w-4 h-4 mr-2" />
