@@ -9,7 +9,7 @@ const CompanyInfo = () => {
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-primary text-primary-foreground">会社案内</Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            <span className="text-primary">エレクトリック静岡</span>について
+            <span className="text-primary">中央電工有限会社</span>について
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             地域密着20年の信頼と実績で、皆様の電気のお困りごとを解決します。

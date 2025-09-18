@@ -14,7 +14,7 @@ const Header = () => {
               <Zap className="w-6 h-6 text-accent-foreground animate-pulse-glow" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-foreground">有限会社中央電工</h1>
+              <h1 className="text-2xl font-bold text-foreground">中央電工有限会社</h1>
               <p className="text-muted-foreground text-sm">確かな技術で安心をお届け</p>
             </div>
           </div>
