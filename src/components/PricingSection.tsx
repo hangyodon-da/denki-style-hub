@@ -50,7 +50,7 @@ const PricingSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-card">
+    <section className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-primary text-primary-foreground">料金目安</Badge>
@@ -66,7 +66,7 @@ const PricingSection = () => {
           {pricingData.map((category, index) => (
             <Card 
               key={index} 
-              className="shadow-card hover:shadow-electric transition-all duration-300 hover:-translate-y-2 bg-gradient-card border-border/50 cursor-pointer"
+              className="shadow-card hover:shadow-electric transition-all duration-300 hover:-translate-y-2 bg-card border border-border cursor-pointer"
               onClick={() => navigate("/contact")}
             >
               <CardHeader className="text-center pb-4">
@@ -96,13 +96,13 @@ const PricingSection = () => {
             ※出張費・材料費込みの目安価格です。詳細はお見積もりにてご確認ください。
           </p>
           <div className="space-y-4">
-            <Badge variant="outline" className="border-accent text-accent">
+            <Badge variant="outline" className="border-primary text-primary bg-primary/5">
               見積もり無料・相談無料
             </Badge>
             <div>
               <Button
                 onClick={() => navigate("/contact")}
-                className="bg-gradient-electric text-white shadow-glow hover:shadow-electric transition-all duration-300"
+                className="bg-accent hover:bg-accent-light text-accent-foreground shadow-glow hover:shadow-electric transition-all duration-300"
                 size="lg"
               >
                 お問い合わせはこちら

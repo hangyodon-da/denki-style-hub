@@ -18,7 +18,7 @@ const CompanyInfo = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
           {/* Company Details */}
-          <Card className="shadow-card bg-gradient-card border-border/50">
+          <Card className="shadow-card bg-card border border-border">
             <CardHeader>
               <CardTitle className="text-2xl font-bold text-foreground flex items-center gap-3">
                 <MapPin className="w-6 h-6 text-primary" />
@@ -71,7 +71,7 @@ const CompanyInfo = () => {
           </Card>
 
           {/* Map Placeholder */}
-          <Card className="shadow-card bg-gradient-card border-border/50">
+          <Card className="shadow-card bg-card border border-border">
             <CardHeader>
               <CardTitle className="text-2xl font-bold text-foreground">
                 アクセスマップ

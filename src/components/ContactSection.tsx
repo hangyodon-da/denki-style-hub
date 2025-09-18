@@ -28,7 +28,7 @@ const ContactSection = () => {
             </CardHeader>
             <CardContent className="text-center space-y-4">
               <div className="text-3xl font-bold text-accent mb-2">
-                054-XXX-XXXX
+                0548-87-2378
               </div>
               <div className="space-y-2 text-primary-foreground/90">
                 <div className="flex items-center justify-center gap-2">
@@ -40,6 +40,7 @@ const ContactSection = () => {
               <Button 
                 className="w-full bg-accent hover:bg-accent-light text-accent-foreground shadow-glow"
                 size="lg"
+                onClick={() => window.open('tel:0548-87-2378', '_self')}
               >
                 <Phone className="w-4 h-4 mr-2" />
                 今すぐ電話する
@@ -107,11 +108,11 @@ const ContactSection = () => {
         </div>
 
         {/* Emergency Contact */}
-        <Card className="mt-12 shadow-electric bg-gradient-electric">
+        <Card className="mt-12 shadow-electric bg-gradient-hero">
           <CardContent className="p-8 text-center">
             <div className="flex items-center justify-center gap-4 mb-4">
-              <div className="flex items-center justify-center w-12 h-12 bg-white/20 rounded-full animate-pulse-glow">
-                <Zap className="w-6 h-6 text-white" />
+              <div className="flex items-center justify-center w-12 h-12 bg-accent rounded-full animate-pulse-glow">
+                <Zap className="w-6 h-6 text-accent-foreground" />
               </div>
               <h3 className="text-2xl font-bold text-white">緊急時・夜間対応</h3>
             </div>
@@ -120,12 +121,13 @@ const ContactSection = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <div className="text-white">
-                <p className="font-semibold">緊急連絡先: 090-XXXX-XXXX</p>
+                <p className="font-semibold">緊急連絡先: 0548-87-2378</p>
                 <p className="text-sm text-white/80">（夜間・休日専用）</p>
               </div>
               <Button 
                 variant="secondary" 
-                className="bg-white/20 hover:bg-white/30 text-white border-white/30"
+                className="bg-accent hover:bg-accent-light text-accent-foreground"
+                onClick={() => window.open('tel:0548-87-2378', '_self')}
               >
                 緊急時はこちら
               </Button>

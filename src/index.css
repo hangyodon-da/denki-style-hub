@@ -2,53 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Electric Company Design System - Modern & Trendy */
+/* Cool Monochrome Design System - White & Black Based */
 
 @layer base {
   :root {
-    /* Core Brand Colors */
+    /* Core Brand Colors - Cool Monochrome */
     --background: 0 0% 100%;
-    --foreground: 221 30% 15%;
+    --foreground: 0 0% 10%;
 
-    /* Electric Blue Primary */
-    --primary: 216 100% 50%;
+    /* Cool Gray Primary */
+    --primary: 210 15% 25%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 216 100% 65%;
-    --primary-dark: 216 100% 35%;
+    --primary-light: 210 15% 40%;
+    --primary-dark: 210 15% 15%;
 
-    /* Electric Yellow Accent */
-    --accent: 48 100% 55%;
-    --accent-foreground: 221 30% 15%;
-    --accent-light: 48 100% 70%;
+    /* Vibrant Contact Accent - Electric Blue for standout */
+    --accent: 214 100% 60%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 214 100% 70%;
 
-    /* Modern Grays */
-    --secondary: 210 20% 96%;
-    --secondary-foreground: 221 30% 15%;
-    --muted: 210 15% 94%;
-    --muted-foreground: 221 15% 45%;
+    /* Cool Grays */
+    --secondary: 210 10% 96%;
+    --secondary-foreground: 0 0% 10%;
+    --muted: 210 8% 94%;
+    --muted-foreground: 210 10% 45%;
 
     /* Card & UI */
     --card: 0 0% 100%;
-    --card-foreground: 221 30% 15%;
+    --card-foreground: 0 0% 10%;
     --popover: 0 0% 100%;
-    --popover-foreground: 221 30% 15%;
+    --popover-foreground: 0 0% 10%;
 
     /* Utility */
-    --border: 210 25% 90%;
-    --input: 210 25% 90%;
-    --ring: 216 100% 50%;
+    --border: 210 15% 88%;
+    --input: 210 15% 88%;
+    --ring: 214 100% 60%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    /* Electric Gradients */
-    --gradient-electric: linear-gradient(135deg, hsl(216 100% 50%), hsl(48 100% 55%));
-    --gradient-hero: linear-gradient(135deg, hsl(216 100% 50%) 0%, hsl(216 100% 35%) 50%, hsl(48 100% 55%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(210 20% 98%) 100%);
+    /* Cool Monochrome Gradients */
+    --gradient-electric: linear-gradient(135deg, hsl(214 100% 60%), hsl(214 100% 70%));
+    --gradient-hero: linear-gradient(135deg, hsl(210 15% 15%) 0%, hsl(210 15% 25%) 50%, hsl(210 10% 35%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(210 15% 98%) 100%);
 
-    /* Shadows & Effects */
-    --shadow-electric: 0 10px 40px -10px hsl(216 100% 50% / 0.3);
-    --shadow-glow: 0 0 30px hsl(216 100% 50% / 0.4);
-    --shadow-card: 0 4px 20px -4px hsl(221 30% 15% / 0.1);
+    /* Cool Shadows & Effects */
+    --shadow-electric: 0 10px 40px -10px hsl(214 100% 60% / 0.3);
+    --shadow-glow: 0 0 30px hsl(214 100% 60% / 0.4);
+    --shadow-card: 0 4px 20px -4px hsl(210 15% 25% / 0.1);
 
     --radius: 0.75rem;
 
@@ -139,10 +139,10 @@
 
   @keyframes pulse-glow {
     from {
-      box-shadow: 0 0 20px hsl(216 100% 50% / 0.3);
+      box-shadow: 0 0 20px hsl(214 100% 60% / 0.3);
     }
     to {
-      box-shadow: 0 0 40px hsl(216 100% 50% / 0.6);
+      box-shadow: 0 0 40px hsl(214 100% 60% / 0.6);
     }
   }
 

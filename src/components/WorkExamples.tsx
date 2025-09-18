@@ -49,7 +49,7 @@ const WorkExamples = () => {
 
         {/* Featured Project */}
         <div className="mb-16">
-          <Card className="overflow-hidden shadow-electric bg-gradient-card">
+          <Card className="overflow-hidden shadow-electric bg-card border border-border">
             <div className="md:flex">
               <div className="md:w-1/2">
                 <img 
@@ -103,7 +103,7 @@ const WorkExamples = () => {
           {examples.map((example, index) => (
             <Card 
               key={index} 
-              className="shadow-card hover:shadow-electric transition-all duration-300 hover:-translate-y-2 bg-gradient-card"
+              className="shadow-card hover:shadow-electric transition-all duration-300 hover:-translate-y-2 bg-card border border-border"
             >
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-4">
@@ -112,7 +112,7 @@ const WorkExamples = () => {
                       <Star key={i} className="w-4 h-4 fill-accent text-accent" />
                     ))}
                   </div>
-                  <Badge variant="outline" className="border-accent text-accent">完工済み</Badge>
+                  <Badge variant="outline" className="border-primary text-primary bg-primary/5">完工済み</Badge>
                 </div>
                 
                 <h3 className="text-lg font-bold text-foreground mb-3">
@@ -143,7 +143,7 @@ const WorkExamples = () => {
                     <Badge 
                       key={tagIndex} 
                       variant="outline" 
-                      className="text-xs border-muted text-muted-foreground"
+                      className="text-xs border-primary text-primary hover:bg-primary/10"
                     >
                       {tag}
                     </Badge>
