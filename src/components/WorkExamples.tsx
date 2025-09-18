@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { MapPin, Calendar, User, Star } from "lucide-react";
+import { Link } from "react-router-dom";
 import workImage from "@/assets/work-examples.jpg";
 
 const WorkExamples = () => {
@@ -35,7 +36,7 @@ const WorkExamples = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section id="work-examples" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-accent text-accent-foreground">施工事例</Badge>
@@ -101,10 +102,10 @@ const WorkExamples = () => {
         {/* Other Examples */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {examples.map((example, index) => (
-            <Card 
-              key={index} 
-              className="shadow-card hover:shadow-electric transition-all duration-300 hover:-translate-y-2 bg-card border border-border"
-            >
+            <Link key={index} to={`/work-example/${index}`}>
+              <Card 
+                className="shadow-card hover:shadow-electric transition-all duration-300 hover:-translate-y-2 bg-white border border-gray-200 cursor-pointer"
+              >
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-1">
@@ -151,6 +152,7 @@ const WorkExamples = () => {
                 </div>
               </CardContent>
             </Card>
+            </Link>
           ))}
         </div>
       </div>
