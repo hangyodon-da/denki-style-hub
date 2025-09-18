@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install)",
+      "Bash(npm run dev:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git -c user.name=\"Claude Code\" -c user.email=\"noreply@anthropic.com\" commit -m \"$(cat <<''EOF''\nAdd comprehensive CLAUDE.md documentation\n\n- Include development commands (dev, build, lint, preview)\n- Document React + TypeScript + Vite tech stack\n- Describe project structure and component architecture  \n- Add routing patterns and styling approach guidance\n- Provide development notes for future Claude Code instances\n\n🤖 Generated with [Claude Code](https://claude.ai/code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push:*)",
+      "Bash(git pull:*)",
+      "Bash(git stash:*)",
+      "Bash(git -c user.name=\"Claude Code\" -c user.email=\"noreply@anthropic.com\" rebase --continue)",
+      "Bash(git rebase:*)",
+      "Bash(git -c user.name=\"Claude Code\" -c user.email=\"noreply@anthropic.com\" pull origin main)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
